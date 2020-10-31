@@ -11,6 +11,10 @@ html {
   font-size: 32px;
 }
 
+body {
+  margin: 0;
+}
+
 .b {
   font-weight: bold;
 }
@@ -67,6 +71,12 @@ html {
   margin: 0 auto;
 }
 
+.hd-ft-container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
   height: 400px;
   width: 100%;
@@ -79,6 +89,7 @@ html {
 }
 
 .header .hd-mask {
+  width: 100%;
   height: 100%;
   background-color: rgba(135, 238, 204, 0.5);
   position: relative;
@@ -504,7 +515,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .footer-banner .footer {
     height: 400px;
     width: 100%;
-    max-width: 1200px;
     background-image: url("../img/footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,6 +583,20 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .hd-ft-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .header {
+    max-width: 100% !important;
+  }
+  .header .hd-mask .hd-man {
+    right: 15%;
+    bottom: 5%;
+  }
+  .footer-banner .footer {
+    max-width: 100% !important;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
