@@ -454,7 +454,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             margin-block-end: 1rem;
   }
   .cont-title {
-    width: 50%;
+    width: 30%;
   }
   .title-big {
     font-size: 72px;
@@ -511,7 +511,7 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
   html {
-    font-size: 24px;
+    font-size: 18px;
   }
   .mb-sm {
     margin-bottom: 48px !important;
@@ -549,7 +549,7 @@ Stylesheet: 960px以上のモニタで適用
     bottom: 5%;
   }
   .pack-list .pack-box .pack-copy {
-    padding: 0 20%;
+    padding: 0 15%;
   }
   .sv-lists {
     padding: 50px;
@@ -569,7 +569,7 @@ Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
   html {
-    font-size: 32px;
+    font-size: 20px;
   }
   .hd-ft-container {
     width: 100% !important;
