@@ -8,7 +8,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 .ft-sm {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .ft-red {
@@ -32,7 +32,7 @@ body {
 }
 
 .mb-sm {
-  margin-bottom: 16px !important;
+  margin-bottom: 30px !important;
 }
 
 .mb-lg {
@@ -55,7 +55,7 @@ body {
   font-size: 3rem;
 }
 
-.flex, .pack-list, .sv-lists .sv-list, .description-box {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,14 +65,14 @@ body {
           flex-direction: column;
 }
 
-.global-container {
-  width: 1200px;
+.main-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .hd-ft-container {
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -97,29 +97,23 @@ body {
 
 .header .hd-mask .hd-title {
   margin: 0;
-  padding-top: 50px;
-  font-size: 48px;
-  font-family: 'Noto Sans JP', sans-serif;
-  display: block;
-  text-align: center;
-  color: white;
-  /* position: absolute;
-      top: 10%;
-      left: 5%; */
-}
-
-.header .hd-mask .hd-copy {
-  margin: 0;
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 36px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
   text-align: center;
   color: white;
+}
+
+.header .hd-mask .hd-copy {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+  text-align: center;
+  color: white;
   letter-spacing: 5px;
-  /* position: absolute;
-      top: 30%;
-      left: 5%; */
 }
 
 .header .hd-mask .hd-logo {
@@ -138,40 +132,39 @@ body {
 }
 
 .header .hd-mask .hd-man {
-  width: 200px;
+  width: 100px;
   height: auto;
   position: absolute;
   border-radius: 50%;
   right: 5%;
-  bottom: 5%;
-}
-
-#hd-man {
-  position: absolute;
-  top: 15%;
-  right: 5%;
-  border-radius: 10%;
+  bottom: 2%;
 }
 
 .title-big {
-  font-size: 100px;
+  font-size: 64px;
 }
 
 .cont-title {
-  width: 30%;
+  width: 80%;
   display: block;
   margin: 0 auto;
-  padding-top: 50px;
   text-align: center;
   border-bottom: 3px solid #085808;
 }
 
 .pack-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px 0;
 }
 
 .pack-list .pack-box {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -183,7 +176,7 @@ body {
 }
 
 .pack-list .pack-box .pack-copy {
-  padding: 0 20%;
+  padding: 0 15%;
 }
 
 .icon {
@@ -193,25 +186,26 @@ body {
   padding: 20px;
 }
 
-/* .sv-container {
-  height: 400px;
-} */
 .sv-lists {
   background-color: #085808;
-  padding: 50px;
-  margin: 30px 0;
+  padding: 30px 10px;
 }
 
 .sv-lists .sv-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
-  padding: 10px 0;
 }
 
 .sv-lists .sv-list .sv-box {
-  width: 45%;
+  width: 100%;
   display: block;
-  margin: 30px auto;
-  padding: 50px;
+  margin: 0 auto;
   border-radius: 20px;
 }
 
@@ -247,11 +241,13 @@ body {
 }
 
 .sv-lists table td {
-  padding: .7em;
+  font-size: 0.6rem;
+  padding: 2em 0.1em;
   text-align: center;
 }
 
 .sv-lists table th {
+  font-size: 0.75rem;
   text-align: left;
 }
 
@@ -291,39 +287,41 @@ body {
   margin-bottom: 10px;
 }
 
-.description-box {
-  -webkit-box-orient: unset !important;
-  -webkit-box-direction: unset !important;
-      -ms-flex-direction: unset !important;
-          flex-direction: unset !important;
+.description-list .description-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 40px 0;
 }
 
-.description-box .description {
-  width: 45%;
+.description-list .description-box .description {
+  width: 100%;
   margin: 30px 20px;
   padding: 10px;
   border-radius: 20px;
 }
 
-.description-box .description .description-left {
+.description-list .description-box .description .description-left {
   text-align: center;
 }
 
-.description-box .description > p {
+.description-list .description-box .description > p {
   margin: 10px 0;
 }
 
-.description-box .voice-text {
+.description-list .description-box .voice-text {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
-.description-box .voice-box {
-  width: 80%;
+.description-list .description-box .voice-box {
+  width: 90%;
   margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,17 +330,19 @@ body {
   border: 3px solid #085808;
 }
 
-.description-box .voice-box .voice-icon {
+.description-list .description-box .voice-box .voice-icon {
   width: 20%;
   text-align: center;
 }
 
-.description-box .voice-box .voice {
+.description-list .description-box .voice-box .voice {
   width: 80%;
 }
 
-.flow-list > img {
-  width: 100%;
+.flow-list .flow-img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-banner {
@@ -368,7 +368,7 @@ body {
 
 .footer-banner .footer .ft-mask .ft-title {
   margin: 0;
-  padding-top: 150px;
+  padding-top: 100px;
   font-size: 48px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
@@ -434,7 +434,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .ft-sm {
     font-size: 0.8rem;
   }
-  .flex, .pack-list, .sv-lists .sv-list, .description-box {
+  .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -453,119 +453,54 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
   }
+  .cont-title {
+    width: 50%;
+  }
   .title-big {
     font-size: 72px;
   }
   .pack-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 30px 0;
   }
-  .pack-list .pack-box {
-    width: 33%;
-    padding-top: 30px;
-  }
-  .pack-list .pack-box .pack {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
   .pack-list .pack-box .pack-copy {
-    padding: 0 20%;
+    padding: 0 10%;
   }
-  .description-box {
-    margin: 40px 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .sv-lists {
+    padding: 30px;
   }
-  .description-box .description {
-    width: 20%;
-    margin: 30px 20px;
-    padding: 10px;
-    border-radius: 20px;
+  .sv-lists .sv-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .description-box .description .description-left {
-    text-align: center;
+  .sv-lists table td {
+    font-size: 0.75rem;
+    padding: 2em 0.1em;
   }
-  .description-box .description > p {
-    margin: 10px 0;
+  .sv-lists table th {
+    font-size: 1rem;
   }
-  .description-box .voice-text {
+  .description-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .description-list .description-box .description {
+    width: 25%;
+  }
+  .description-list .description-box .voice-text {
     display: block;
     width: 100%;
     margin: 0 100px;
   }
-  .description-box .voice-box {
+  .description-list .description-box .voice-box {
     width: 80%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 20px;
-    border: 3px solid #085808;
-  }
-  .description-box .voice-box .voice-icon {
-    width: 20%;
-    text-align: center;
-  }
-  .description-box .voice-box .voice {
-    width: 80%;
-  }
-  .footer-banner {
-    text-decoration: none;
-  }
-  .footer-banner .footer {
-    height: 400px;
-    width: 100%;
-    background-image: url("../img/footer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    position: relative;
-  }
-  .footer-banner .footer .ft-mask {
-    height: 100%;
-    background-color: rgba(135, 238, 204, 0.5);
-    position: relative;
-  }
-  .footer-banner .footer .ft-mask .ft-title {
-    margin: 0;
-    padding-top: 200px;
-    font-size: 48px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: block;
-    text-align: center;
-    color: white;
-    /* position: absolute;
-        top: 10%;
-        left: 5%; */
-  }
-  .footer-banner .footer .ft-mask .ft-copy {
-    margin: 0;
-    padding-top: 10px;
-    font-size: 28px;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: block;
-    text-align: center;
-    color: white;
-    letter-spacing: 5px;
-    /* position: absolute;
-        top: 30%;
-        left: 5%; */
-  }
-  .footer-banner .footer .ft-mask .ft-logo {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 1px;
-    background-color: white;
-    border-radius: 20px;
-  }
-  .footer-banner .footer .ft-mask .ft-logo > p {
-    color: black;
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: none;
   }
 }
 
@@ -575,6 +510,56 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  html {
+    font-size: 24px;
+  }
+  .mb-sm {
+    margin-bottom: 48px !important;
+  }
+  .mb-lg {
+    margin-bottom: 80px !important;
+  }
+  .mb-lgg {
+    margin-bottom: 200px !important;
+  }
+  .pb-sm {
+    padding-bottom: 16px !important;
+  }
+  .pb-lg {
+    padding-bottom: 80px !important;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .hd-mask .hd-title {
+    padding-top: 50px;
+    font-size: 48px;
+  }
+  .header .hd-mask .hd-copy {
+    font-size: 36px;
+  }
+  .header .hd-mask .hd-man {
+    width: 175px;
+    bottom: 5%;
+  }
+  .pack-list .pack-box .pack-copy {
+    padding: 0 20%;
+  }
+  .sv-lists {
+    padding: 50px;
+  }
+  .sv-lists .sv-list .sv-box .sv-txt {
+    padding: 30px;
+  }
+  .description-list .description-box .description {
+    width: 19%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -583,6 +568,9 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  html {
+    font-size: 32px;
+  }
   .hd-ft-container {
     width: 100% !important;
     max-width: 100% !important;
@@ -593,6 +581,9 @@ Stylesheet: 1280px以上のモニタで適用
   .header .hd-mask .hd-man {
     right: 15%;
     bottom: 5%;
+  }
+  .title-big {
+    font-size: 100px;
   }
   .footer-banner .footer {
     max-width: 100% !important;
