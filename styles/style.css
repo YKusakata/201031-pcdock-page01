@@ -578,7 +578,7 @@ Stylesheet: 1280px以上のモニタで適用
     max-width: 100% !important;
   }
   .header .hd-mask .hd-man {
-    right: 15%;
+    right: 10%;
     bottom: 5%;
   }
   .title-big {
